@@ -1,0 +1,243 @@
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body, html {
+  min-height: 100vh;
+  max-width: 100vw;
+  position: relative;
+}
+
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.content {
+  padding: 0px 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #FFC840;
+}
+
+.c-white {
+  color: white !important;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.nav-item {
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+}
+
+.nav-item:hover {
+  background-color: #FFB600;
+  border-radius: 4px;
+}
+
+.nav-item a {
+  font-weight: 600;
+  color: white !important;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: white;
+  background-color: white;
+}
+
+.carousel-item img {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  height: 80vh !important;
+}
+
+#WildAnimals,
+#HomeAnimals {
+  background-color: #FFC840;
+  padding: 30px 0;
+  position: relative;
+  z-index: 0;
+}
+
+#WildAnimals img,
+#HomeAnimals img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.15;
+  z-index: 1;
+}
+
+.sectionTitle {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.sectionTitle.reverse {
+  color: #FFC840;
+  margin-bottom: 30px;
+}
+
+.Content {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+#WildRepresentatives,
+#HomeRepresentatives {
+  padding: 30px 0;
+}
+
+.card {
+  border: 2px solid #FFC840;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card img {
+  border-bottom: 2px solid #FFC840;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 3px;
+  color: #FFB600;
+}
+
+.card-text {
+  text-align: justify;
+  color: black;
+  font-size: 16px;
+}
+
+.page-footer {
+  background-color: #FFC840;
+  padding: 30px 0;
+  position: relative;
+}
+
+.page-footer .container {
+  z-index: 2;
+  position: relative;
+}
+
+.page-footer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.15;
+  z-index: 1;
+}
+
+.fotterContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fotterContent-block {
+  color: white;
+  padding: 0 15px;
+  margin: 15px 0;
+}
+
+.fotterContent-block-title {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.fotterContent-block-text {
+  font-size: 18px;
+  text-align: justify;
+  font-weight: 500;
+}
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  padding: 15px;
+  background-color: #464646;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 993px) {
+  .card-deck {
+    display: block !important;
+  }
+  .card-deck .card + .card {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fotterContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .sectionTitle {
+    font-size: 23px;
+  }
+}

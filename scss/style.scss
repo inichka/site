@@ -1,0 +1,204 @@
+*,*:after,*:before{
+    margin: 0;
+    padding: 0;
+    outline: none!important;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body,html{
+    min-height: 100vh;
+    max-width: 100vw;
+    position: relative;
+}
+
+.wrapper{
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.content{
+    padding: 0px 15px;
+    max-width: 900px;
+    margin: 0 auto;  
+}
+
+$orange: #FFC840;
+$hoverOrange:#FFB600;
+
+.navbar{
+    background-color: $orange;
+}
+
+.c-white{
+    color: white!important;
+}
+.navbar-brand{
+    font-weight: 700;
+}
+.nav-item{
+    transition: all .1s ease;
+    &:hover{
+        background-color: $hoverOrange;
+        border-radius: 4px;
+    }
+    a{
+        font-weight: 600;
+        color: white!important;;
+    }
+}
+.navbar-light .navbar-toggler{
+    border-color: white;
+    background-color: white;
+}
+.carousel-item img{
+    object-fit: cover!important;
+    height: 80vh !important;
+}
+
+#WildAnimals,
+#HomeAnimals{
+    background-color: $orange;
+    padding: 30px 0;
+    position: relative;
+    z-index: 0;
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.15;
+        z-index: 1;
+    }
+}
+.sectionTitle{
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    &.reverse{
+        color: $orange;
+        margin-bottom: 30px;
+    }
+}
+.Content{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+#WildRepresentatives,
+#HomeRepresentatives{
+    padding: 30px 0;
+}
+
+.card{
+    border: 2px solid $orange;
+    border-radius: 15px;
+    overflow: hidden;
+    img{
+        border-bottom: 2px solid $orange;
+        height: 50%;
+        object-fit: cover;
+    }
+}
+.card-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: $hoverOrange;
+}
+
+.card-text{
+    text-align: justify;
+    color: black;
+    font-size: 16px;
+}
+
+.page-footer{
+    background-color: $orange;
+    padding: 30px 0;
+    position: relative;
+    .container{
+        z-index: 2;
+        position: relative;
+    }
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.15;
+        z-index: 1;
+    }
+}
+.fotterContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &-block{
+        color: white;
+        padding: 0 15px;
+        margin: 15px 0;
+        &-title{
+            font-size: 25px;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        &-text{
+            font-size: 18px;
+            text-align: justify;
+            font-weight: 500;
+        }
+    }
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 15px;
+    background-color: #464646;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 993px){
+    .card-deck {
+        display: block!important;
+        .card+.card{
+            margin-top: 15px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .fotterContent{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 425px){
+    .sectionTitle{
+        font-size: 23px;
+    }
+}
